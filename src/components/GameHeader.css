@@ -1,0 +1,51 @@
+/* GameHeader.css */
+.game-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.game-header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.game-header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+.formula {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .game-header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
